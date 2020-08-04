@@ -1,0 +1,47 @@
+.outputList {
+    border-top: 1px solid #dfdfdf;
+    margin: 0 0 0 0;
+    padding: .5rem 0 0 0;
+
+
+  li {
+    list-style: none;
+    border-bottom: 1px solid #dfdfdf;
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.outputList >*{
+  padding-right: .5rem;
+}
+
+.partnerLogoSmall {
+  height: 50px;
+  width: auto;
+}
+
+.pub_add p {
+  display: inline;
+}
+
+
+.listFilterBar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  input {
+    padding: .2rem;
+    margin: 0 0 .5rem 0;
+    width: 50%;
+  }
+}

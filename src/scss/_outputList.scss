@@ -1,0 +1,13 @@
+.outputList >*{
+  flex: 1;
+  padding-right: .5rem;
+}
+
+.outputList {
+  display: flex;
+  flex-direction: row;
+}
+
+.pub_add p {
+  display: inline;
+}

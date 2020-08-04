@@ -1,0 +1,30 @@
+.partners {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.partners img{
+  width: 125px;
+  height: auto;
+}
+
+.partnerItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 125px;
+  margin: 0 .5rem .5rem 0;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.bgLightGrey {
+  background-color: #f0f0f0;
+  width: 100%;
+}

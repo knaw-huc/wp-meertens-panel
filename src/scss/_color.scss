@@ -1,0 +1,68 @@
+// Colors
+$colorPrimairy: #03dbe8;
+$colorSecundairy:#ddf279;     //#fff568;
+$colorTertiary: #56504b;
+$colorLink: #046eab;
+
+$colorGreyVeryLight: #fbfbfb;
+$colorGreyLightBg: #fafafa;
+$colorGreyLightElement: darken( $colorGreyLightBg, 5% );
+$colorGreyMid: #999999;
+$colorGreyDark: #3e3e3e;
+$colorTxt: #3e3e3e;
+$colorWhite: #fff;
+$colorFormElements: #f0f5f9;
+
+$colorInfo: #00d1ff;
+$colorReward: #9ed041;
+$colorError: #d42600;
+$colorCaution: #e3ca68;
+
+$colorHuygensBlueDark:#082045;
+$colorHuygensBlueLight:#66abcf;
+$colorHuygensDYellow:#f9d567;
+$colorHuygensOrange:#d06f5d;
+$colorHuygensGreen:#64a264;
+$colorHuygensGreyLight:#efefef;
+$colorHuygensGreyMid:#d0d8d9;
+$colorHuygensBlueDarkText:#00153c;
+
+$colorDutchPrizePapersGreen: #83ffcc;
+$colorDutchPrizePapersBlue: #035591;
+
+// Grey
+$greyLight: rgb(246, 246, 246);
+$greyheavy: rgb(246, 246, 246);
+
+body {
+	background-color: $colorWhite;
+	color: $colorTxt;
+}
+
+a {
+	color: $colorLink;
+}
+
+$colorFormElements: #f0f5f9;
+
+
+
+.colorBgGrey {
+  background-color: $greyLight;
+}
+
+.colorBgGreyLight {
+  background-color: $colorGreyVeryLight;
+}
+
+// .colorBgGreyMin {
+//   background-color: lighten( $greyLight, 5% );
+// }
+
+.colorBgGreyPlus {
+  background-color: darken( $greyLight, 10% );
+}
+
+.hcTxtColorGreyMid {
+	color: $colorGreyMid;
+}

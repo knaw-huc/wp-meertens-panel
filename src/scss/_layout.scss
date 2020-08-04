@@ -1,0 +1,38 @@
+.itemBlock{
+	max-width: 636px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+
+	h2 {
+		text-align: center;
+		width: 100%;
+		display: block;
+
+	}
+}
+
+.itemBlockWide{
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+
+.xCols {
+	display: flex;
+	flex-direction: column;
+}
+
+.xCols >*{
+	flex: 1;
+	padding-right: 2rem;
+}
+
+@media (min-width: 800px) {
+	.xCols {
+		display: flex;
+		flex-direction: row;
+	}
+}

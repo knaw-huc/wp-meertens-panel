@@ -1,0 +1,48 @@
+// Alignments and directions
+
+.hcAlignHorizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.hcAlignVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.hcAlignLeft {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hcAlignRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hcAlignVertical.alignRight {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.hcAlignCenter {
+  display: flex;
+  justify-content: center;
+}
+
+
+.hcAlignVertical.alignCenter {
+  display: flex;
+  align-items: center;
+}
+
+// .hcBlockCenter {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+//
+// .hcFullHeight {
+//   min-height: 100vh;
+// }

@@ -1,0 +1,162 @@
+@import 'normalise';
+@import 'color';
+@import 'var';
+@import 'margin';
+@import 'alignments';
+@import 'typo';
+@import 'layout';
+
+
+@import 'components/basic-navigation';
+@import 'components/splitScreen';
+@import 'components/homepage-items';
+@import 'components/output';
+@import 'components/staff';
+@import 'components/partners';
+@import 'components/elaborate';
+@import 'posts';
+
+.tag {
+  font-style: italic;
+}
+
+.tag::before {
+  content: "#";
+}
+
+
+.footer {
+  padding: 3rem 0 6rem 0;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(187, 218, 233)
+}
+
+
+
+.footer div{
+  width: auto;
+}
+
+@media (min-width: 1000px) {
+  .footer div{
+    width: 900px;
+  }
+}
+
+
+.footer iframe {
+  height: 600px !important;
+  overflow: auto;
+}
+
+.footernav {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cards >* {
+  width: calc(100% - 1rem);
+  margin: 0 1rem 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+$postCardsGutter: 4rem;
+
+.postCards{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.postCard {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - #{$postCardsGutter});
+  //background-color: hsl(0, 0%, 95%);
+  margin: 0 #{$postCardsGutter} #{$postCardsGutter} 0;
+  cursor: pointer;
+  border-bottom: 1px solid hsl(0, 0%, 91%);
+  padding-bottom: .5rem;
+}
+
+.postCardImage {
+  height: 200px;
+  overflow-y: hidden;
+  margin-bottom: 1rem
+}
+
+.postCardImage img {
+  width: 100%;
+  height: auto;
+}
+
+.postCardText {
+  p{
+    margin-bottom: 0em;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+  }
+
+  .cards >* {
+    width: calc(50% - 1rem);
+  }
+
+
+
+  .postCards{
+    flex-direction: row;
+  }
+
+  .postCard {
+    width: calc(33% - #{$postCardsGutter});
+  }
+}
+
+
+
+.smallGrey {
+  font-size: .9rem;
+  color: #6f6f6f;
+}
+
+
+// SM
+.twitterIcon {
+  width: 1.3rem;
+  height: auto;
+  margin-right: .5rem;
+}
+
+.allTagsLinks {
+  display: flex;
+  margin: 1rem 0;
+  >* {
+    margin-right: 1rem;
+  }
+}
+
+.wp-block-quote {
+    border-left: 4px solid #d5e4ef;
+    padding-left: 1rem;
+    font-style: italic;
+    //margin: 0 -2rem;
+  }

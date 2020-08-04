@@ -1,0 +1,59 @@
+.splitScreen {
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.splitScreenLeft {
+  display: none;
+
+}
+.splitScreenRight {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 66vh;
+
+}
+.splitScreenContent {
+  max-width: 550px;
+
+}
+
+@media (min-width: 800px) {
+
+  .splitScreen {
+    min-height: 66vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  #homeSpitBigPost .splitScreen {
+      min-height: 46vh !important;
+    }
+  #homeSpitBigPost .splitScreenRight {
+      min-height: 46vh !important;
+    }
+
+
+  .splitScreenLeft {
+    display: flex;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+  .splitScreenRight {
+    width: 50%;
+
+  }
+
+
+}

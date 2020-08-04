@@ -1,0 +1,8 @@
+{
+  "pages": [
+      {
+        "name": "index.html",
+        "template": "index.html"
+      }
+  ]
+}

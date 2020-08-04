@@ -1,0 +1,42 @@
+.elaborateBar {
+
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: .9rem;
+}
+
+.elaborateBar >*{
+  //flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  padding: .5rem 2rem;
+  width: 100%;
+  //margin-right: 3rem;
+}
+
+.elaborateBar img{
+  height: 30px;
+  width: auto;
+  margin-left: 1rem;
+}
+
+
+@media (min-width: 800px) {
+  .elaborateBar {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .elaborateBar >*{
+    justify-content: flex-end;
+    border-left: 1px solid hsl(0, 0%, 90%);
+    padding: .5rem 3rem;
+    width: auto;
+
+  }
+}
