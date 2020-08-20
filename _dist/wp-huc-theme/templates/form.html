@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Meertens Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/meertenspanel.css">
+</head>
+
+<body>
+
+  <div class="mpFrame">
+    <!-- sidebar and navigatition -->
+    <div class="mpSidebar">
+      <div class="mpBrand">
+        <img src="/images/logo-meertensPanel.png" alt="" class="mpLogo">
+      </div>
+    
+      <nav class="mpNav">
+        <a href="">Home</a>
+        <a href="">Meertens Panel</a>
+        <a href="">Aanmelden</a>
+        <a href="">Privacy</a>
+        <a href="">Over het Meertens Panel</a>
+      </nav>
+    
+      <!-- if logged in -->
+      <nav class="mpLogedInMenu">
+        <div class="mpLoginInfo">U bent ingelogd als Bas Doppen</div>
+        <a href="">Gegevens bekijken</a>
+        <a href="">Gegevens wijzigen</a>
+        <a href="">Wachtwoord wijzigen</a>
+        <a href="">Uitloggen</a>
+      </nav>
+    
+      <!-- if not logged in -->
+      <div class="mpLogin">
+        Wilt u uw gegevens aanpassen? Log dan hier in.<br>
+        <button type="button" name="button">Login</button>
+      </div>
+    </div>
+
+    <div class="mpContent">
+
+      <div class="mpTextWrap">
+        <h1>Aanmelden voor het Meertens Panel</h1>
+        <p>Meld u aan als deelnemer aan het Meertens Panel door het onderstaande formulier in te vullen. Wij verzoeken u hierbij enige gegevens te verstrekken over uw persoonlijke situatie. Deze informatie wordt uitsluitend door ons gebruikt om ervoor te zorgen dat panelleden alleen voor relevante enquêtes worden uitgenodigd.</p>
+      
+      <p>Informatie over het privacy-beleid van het Meertens Instituut vindt u op de privacy-pagina.</p>
+      <!-- Form -->
+        <div class="formSection hcForm">
+          <h2>Naam en adres</h2>
+          <div class="hcFormElement hcformMessageFieldOK"><label>
+              <div class="hcLabelName">Voornaam</div>
+              <div class="hcLabelInfo"></div><input type="text" id="Voornaam" name="Voornaam" class="val notEmpty ">
+            </label>
+            <div class="hcformMessage" id="msg_Voornaam"></div>
+          </div>
+      
+          <div class="hcFormElement hcformMessageFieldWarning"><label>
+              <div class="hcLabelName">Achternaam</div>
+              <div class="hcLabelInfo"></div><select id="Achternaam" name="Achternaam" class="val notEmpty ">
+                <option value="optie 1">optie 1</option>
+                <option value="optie 2">optie 2</option>
+                <option value="optie 3">optie 3</option>
+                <option value="optie 4">optie 4</option>
+                <option value="optie 5">optie 5</option>
+              </select>
+            </label>
+            <div class="hcformMessage" id="msg_Achternaam"></div>
+          </div>
+      
+          <div class="hcFormElement hcformMessageFieldWarning"><label>
+              <div class="hcLabelName">Email</div>
+              <div class="hcLabelInfo"></div>
+              <input type="text" id="Email" name="Email">
+            </label>
+            <div class="hcformMessage" id="msg_Email"><ul><li>Must contain a @ symbole.</li></ul></div>
+          </div>
+      
+      
+        </div>
+        <div class="formSection hcForm">
+          <h2>Achtergrond</h2>
+          <div class="hcFormElement hcformMessageFieldWarning"><label>
+              <div class="hcLabelName">Geslacht</div>
+              <div class="hcLabelInfo"></div>
+              <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_1" name="Geslacht" value="optie 1" class=" notEmpty "><label for="Geslachtoptie_1">optie 1</label></div>
+              <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_2" name="Geslacht" value="optie 2" class=" notEmpty "><label for="Geslachtoptie_2">optie 2</label></div>
+              <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_3" name="Geslacht" value="optie 3" class=" notEmpty "><label for="Geslachtoptie_3">optie 3</label></div>
+              <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_4" name="Geslacht" value="optie 4" class=" notEmpty "><label for="Geslachtoptie_4">optie 4</label></div>
+              <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_5" name="Geslacht" value="optie 5" class=" notEmpty "><label for="Geslachtoptie_5">optie 5</label></div>
+            </label>
+            <div class="hcformMessage" id="msg_Geslacht"><ul><li>Selecteer minimaal een optie.</li></ul></div>
+          </div>
+          <div class="hcFormElement"><label>
+              <div class="hcLabelName">Geboortejaar <span>optioneel</span></div>
+              <div class="hcLabelInfo">Spreekt u thuis een van de volgende (vreemde) talen? Indien van toepassing, kunt u meerdere antwoorden aankruisen.</div>
+              <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_1" name="Geboortejaar" value="optie 1" class=" "><label for="Geboortejaaroptie_1">optie 1</label></div>
+              <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_2" name="Geboortejaar" value="optie 2" class=" "><label for="Geboortejaaroptie_2">optie 2</label></div>
+              <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_3" name="Geboortejaar" value="optie 3" class=" "><label for="Geboortejaaroptie_3">optie 3</label></div>
+              <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_4" name="Geboortejaar" value="optie 4" class=" "><label for="Geboortejaaroptie_4">optie 4</label></div>
+              <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_5" name="Geboortejaar" value="optie 5" class=" "><label for="Geboortejaaroptie_5">optie 5</label></div>
+            </label>
+            <div class="hcformMessage" id="msg_Geboortejaar"></div>
+          </div>
+        </div>
+      
+      
+        <div class="hcFormElement"><label>
+            <div class="hcLabelName"></div>
+            <div class="hcLabelInfo"></div>
+            <button type="button" name="button">Verstuur het formulier</button>
+          </label>
+          <div class="hcformMessage" id="msg_Email"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    <!-- </div>
+  </div> -->
+
+<div class="links">
+  <a href="index.html">home</a>
+  <a href="volg.html">volg</a>
+  <a href="form.html">form</a>
+  <a href="login.html">login</a>
+</div>
+
+
+  
+</body>
+</html>

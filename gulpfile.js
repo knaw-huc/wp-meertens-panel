@@ -55,21 +55,13 @@ gulp.task('loadJson', function(done) {
 
 
 
-// gulp.task('browserSync', function(done) {
-//   browserSync.init({
-//     //proxy: "http://localhost:8888/ga1",
-//     server: {
-//       baseDir: dst
-//     },
-//     browser: ["google chrome"], //, "firefox"
-//   })
-//   done();
-// })
 
 gulp.task('browserSync', function(done) {
     browserSync.init({
-        //proxy: "http://localhost:8888/wp-default"
-        proxy: "http://localhost:8888/wp-meerpanel"
+        //proxy: "http://localhost:8888/wp-meerpanel"
+        server: {
+          baseDir: dst
+        },
 
     });
     done();
@@ -110,7 +102,8 @@ gulp.task('sass', function(){
   return gulp.src('./src/scss/*')
     .pipe(plumber())
     .pipe(sass()) //{outputStyle: 'compressed'}
-    .pipe(gulp.dest(dst+'/css'))
+    .pipe(gulp.dest(dst+'/css',))
+    .pipe(gulp.dest(dst+'/templates/css'))
 });
 
 
@@ -127,7 +120,7 @@ gulp.task('buildFromTemplates', function(done) {
           .pipe(handlebars(page, options))
           .pipe(rename(fileName))
           .pipe(useref())
-          .pipe(gulp.dest(dst))
+          .pipe(gulp.dest(dst+'/templates/'))
           .pipe(browserSync.stream());
   }
   done();
@@ -144,6 +137,7 @@ gulp.task('copyFiles', function(done) {
 gulp.task('copyImages', function(done) {
     return gulp.src(fImages)
         .pipe(gulp.dest(dst+'/images'))
+        .pipe(gulp.dest(dst+'/templates/images'))
 
   done();
 });

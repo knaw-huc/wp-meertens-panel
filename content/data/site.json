@@ -2,7 +2,19 @@
   "pages": [
       {
         "name": "index.html",
-        "template": "index.html"
+        "template": "home.html"
+      },
+      {
+        "name": "volg.html",
+        "template": "volg.html"
+      },
+      {
+        "name": "form.html",
+        "template": "form.html"
+      },
+      {
+        "name": "login.html",
+        "template": "login.html"
       }
   ]
 }

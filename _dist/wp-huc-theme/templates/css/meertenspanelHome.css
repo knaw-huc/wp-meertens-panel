@@ -1,0 +1,17 @@
+.mpHero {
+  height: 90vh;
+  width: 100%;
+  background-color: #da203d;
+  color: #fff;
+  background-image: url("/images/mpHero.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center; }
+
+.mpSiteTilte {
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 80%; }

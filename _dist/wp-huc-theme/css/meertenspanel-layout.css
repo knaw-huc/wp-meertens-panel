@@ -1,0 +1,68 @@
+.mpFrame {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.mpSidebar {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0; }
+  .mpSidebar > * {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center; }
+
+.mpContent {
+  background-color: #f5eff0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.mpTextWrap {
+  width: 100%;
+  max-width: 650px;
+  padding: 4rem 1.5rem; }
+
+.mpBrand .mpLogo {
+  width: 8rem;
+  height: auto; }
+
+.mpNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .mpNav a {
+    text-decoration: none;
+    color: #242424;
+    font-weight: 700;
+    margin-right: 1.5rem; }
+
+@media (min-width: 800px) {
+  .mpFrame {
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: flex-end; }
+  .mpSidebar {
+    width: 350px;
+    height: 100vh;
+    padding: 3rem 0;
+    position: fixed;
+    left: 0;
+    top: 0; }
+    .mpSidebar > * {
+      max-width: 250px;
+      text-align: left; }
+  .mpContent {
+    width: calc(100% - 350px); }
+  .mpBrand .mpLogo {
+    width: 12rem; }
+  .mpNav {
+    flex-direction: column; }
+    .mpNav a {
+      font-size: 18px;
+      margin-bottom: .8rem; } }
