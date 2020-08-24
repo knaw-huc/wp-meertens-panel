@@ -1,10 +1,10 @@
 .mpHero{
-	height: 90vh;
+	height:auto;
 	width: 100%;
 	background-color: #da203d;
 	color: #fff;
 
-	background-image: url('/images/mpHero.png');
+	background-image: url('../images/mpHero.png');
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: 100%;
@@ -16,7 +16,62 @@
 }
 
 .mpSiteTilte {
-	font-size: 10rem;
+	font-size: 4rem;
 	font-weight: 700;
 	line-height: 80%;
+}
+
+.mpHomeCols {
+	display: flex;
+	flex-direction: column;
+
+	>*  {
+		padding: 1.5rem;
+	}
+
+}
+
+.mpHomeCol1 {
+	display: flex;
+	flex-direction: column;
+	background-color: hsl(199, 50%, 73%);
+	//color: #FFF;
+	margin-top: -3rem;
+}
+
+.mpHomeCol2 {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+@media (min-width: 800px) {
+	.mpHero{
+		height: 85vh;
+	}
+
+
+	.mpSiteTilte {
+		font-size: 8rem;
+		font-weight: 700;
+		line-height: 90%;
+	}
+
+	.mpHomeCols {
+		flex-direction: row;
+		width: 100%;
+
+		>*  {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			h2,p {
+				max-width: 400px;
+				width: 100%;
+			}
+		}
+	}
 }

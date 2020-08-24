@@ -24,7 +24,8 @@ button {
   padding: .5rem .7rem;
   font-size: 1rem;
   border: 0px;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
 
 .hcLabel {
   color: white;

@@ -58,10 +58,10 @@ gulp.task('loadJson', function(done) {
 
 gulp.task('browserSync', function(done) {
     browserSync.init({
-        //proxy: "http://localhost:8888/wp-meerpanel"
-        server: {
-          baseDir: dst
-        },
+        proxy: "http://localhost:8888/wp-meerpanel"
+        // server: {
+        //   baseDir: dst
+        // },
 
     });
     done();

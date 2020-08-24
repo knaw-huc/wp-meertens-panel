@@ -119,7 +119,8 @@ button {
   padding: .5rem .7rem;
   font-size: 1rem;
   border: 0px;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
 
 .hcLabel {
   color: white;
@@ -164,11 +165,11 @@ button {
     background-size: 40px; }
 
 .mpHero {
-  height: 90vh;
+  height: auto;
   width: 100%;
   background-color: #da203d;
   color: #fff;
-  background-image: url("/images/mpHero.png");
+  background-image: url("../images/mpHero.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
@@ -177,9 +178,44 @@ button {
   justify-content: center; }
 
 .mpSiteTilte {
-  font-size: 10rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 80%; }
+
+.mpHomeCols {
+  display: flex;
+  flex-direction: column; }
+  .mpHomeCols > * {
+    padding: 1.5rem; }
+
+.mpHomeCol1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #98c7dd;
+  margin-top: -3rem; }
+
+.mpHomeCol2 {
+  display: flex;
+  flex-direction: column; }
+
+@media (min-width: 800px) {
+  .mpHero {
+    height: 85vh; }
+  .mpSiteTilte {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 90%; }
+  .mpHomeCols {
+    flex-direction: row;
+    width: 100%; }
+    .mpHomeCols > * {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .mpHomeCols > * h2, .mpHomeCols > * p {
+        max-width: 400px;
+        width: 100%; } }
 
 body {
   font-family: 'Roboto', sans-serif;
