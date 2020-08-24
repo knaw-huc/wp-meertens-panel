@@ -10,6 +10,9 @@
   background-blend-mode: darken;
   display: flex;
   justify-content: center; }
+  .mpHero a {
+    color: #fff;
+    text-decoration: underline; }
 
 .mpSiteTilte {
   font-size: 4rem;
