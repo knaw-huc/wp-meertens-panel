@@ -9,7 +9,8 @@
   background-size: 100%;
   background-blend-mode: darken;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); }
   .mpHero a {
     color: #fff;
     text-decoration: underline; }
