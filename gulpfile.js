@@ -27,7 +27,7 @@ var options = {
     }
 
 var dst =       '_dist/meertensPanel';//'_dist/';
-var dstCopy =       '_dist/wp-huc-theme/**/*';//'_dist/';
+var dstCopy =       '_dist/meertensPanel/**/*';//'_dist/';
 var prebuild =  'react/';
 var fScss=      'src/scss/**/*.scss';
 var fHtml=      'src/**/*.html';

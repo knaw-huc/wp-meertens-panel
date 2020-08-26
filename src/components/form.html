@@ -1,21 +1,22 @@
 <div class="mpTextWrap">
   <h1>Aanmelden voor het Meertens Panel</h1>
-  <p>Meld u aan als deelnemer aan het Meertens Panel door het onderstaande formulier in te vullen. Wij verzoeken u hierbij enige gegevens te verstrekken over uw persoonlijke situatie. Deze informatie wordt uitsluitend door ons gebruikt om ervoor te zorgen dat panelleden alleen voor relevante enquêtes worden uitgenodigd.</p>
+  <p>Meld u aan als deelnemer aan het Meertens Panel door het onderstaande formulier in te vullen. Wij verzoeken u hierbij enige gegevens te verstrekken over uw persoonlijke situatie. Deze informatie wordt uitsluitend door ons gebruikt om ervoor te
+    zorgen dat panelleden alleen voor relevante enquêtes worden uitgenodigd.</p>
 
-<p>Informatie over het privacy-beleid van het Meertens Instituut vindt u op de privacy-pagina.</p>
-<!-- Form -->
+  <p>Informatie over het privacy-beleid van het Meertens Instituut vindt u op de privacy-pagina.</p>
+  <!-- Form -->
   <div class="formSection hcForm">
     <h2>Naam en adres</h2>
-    <div class="hcFormElement hcformMessageFieldOK"><label>
+    <div class="hcFormElement"><label>
         <div class="hcLabelName">Voornaam</div>
-        <div class="hcLabelInfo"></div><input type="text" id="Voornaam" name="Voornaam" class="val notEmpty ">
+        <div class="hcLabelInfo">Je voornaam graag</div><input type="text" id="voornaam" name="voornaam" class="val notEmpty ">
       </label>
-      <div class="hcformMessage" id="msg_Voornaam"></div>
+      <div class="hcformMessage" id="msg_voornaam"></div>
     </div>
-
-    <div class="hcFormElement hcformMessageFieldWarning"><label>
+    <div class="hcFormElement"><label>
         <div class="hcLabelName">Achternaam</div>
-        <div class="hcLabelInfo"></div><select id="Achternaam" name="Achternaam" class="val notEmpty ">
+        <div class="hcLabelInfo">Je achternaam AUB</div><select id="achternaam" name="achternaam" class="val notEmpty ">
+          <option value="-"> - Kies een opties - </option>
           <option value="optie 1">optie 1</option>
           <option value="optie 2">optie 2</option>
           <option value="optie 3">optie 3</option>
@@ -23,42 +24,38 @@
           <option value="optie 5">optie 5</option>
         </select>
       </label>
-      <div class="hcformMessage" id="msg_Achternaam"></div>
+      <div class="hcformMessage" id="msg_achternaam"></div>
     </div>
-
-    <div class="hcFormElement hcformMessageFieldWarning"><label>
+    <div class="hcFormElement"><label>
         <div class="hcLabelName">Email</div>
-        <div class="hcLabelInfo"></div>
-        <input type="text" id="Email" name="Email">
+        <div class="hcLabelInfo">undefined</div><input type="text" id="email" name="email" class="val notEmpty email ">
       </label>
-      <div class="hcformMessage" id="msg_Email"><ul><li>Must contain a @ symbole.</li></ul></div>
+      <div class="hcformMessage" id="msg_email"></div>
     </div>
-
-
   </div>
   <div class="formSection hcForm">
     <h2>Achtergrond</h2>
-    <div class="hcFormElement hcformMessageFieldWarning"><label>
+    <div class="hcFormElement"><label>
         <div class="hcLabelName">Geslacht</div>
-        <div class="hcLabelInfo"></div>
-        <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_1" name="Geslacht" value="optie 1" class=" notEmpty "><label for="Geslachtoptie_1">optie 1</label></div>
-        <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_2" name="Geslacht" value="optie 2" class=" notEmpty "><label for="Geslachtoptie_2">optie 2</label></div>
-        <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_3" name="Geslacht" value="optie 3" class=" notEmpty "><label for="Geslachtoptie_3">optie 3</label></div>
-        <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_4" name="Geslacht" value="optie 4" class=" notEmpty "><label for="Geslachtoptie_4">optie 4</label></div>
-        <div class="hcFormElementItem"><input type="radio" id="Geslachtoptie_5" name="Geslacht" value="optie 5" class=" notEmpty "><label for="Geslachtoptie_5">optie 5</label></div>
+        <div class="hcLabelInfo">Je Geslacht graag</div>
+        <div class="hcFormElementItem"><input type="radio" id="geslachtoptie_1" name="geslacht" value="optie 1" class=" notEmpty "><label for="geslachtoptie_1">optie 1</label></div>
+        <div class="hcFormElementItem"><input type="radio" id="geslachtoptie_2" name="geslacht" value="optie 2" class=" notEmpty "><label for="geslachtoptie_2">optie 2</label></div>
+        <div class="hcFormElementItem"><input type="radio" id="geslachtoptie_3" name="geslacht" value="optie 3" class=" notEmpty "><label for="geslachtoptie_3">optie 3</label></div>
+        <div class="hcFormElementItem"><input type="radio" id="geslachtoptie_4" name="geslacht" value="optie 4" class=" notEmpty "><label for="geslachtoptie_4">optie 4</label></div>
+        <div class="hcFormElementItem"><input type="radio" id="geslachtoptie_5" name="geslacht" value="optie 5" class=" notEmpty "><label for="geslachtoptie_5">optie 5</label></div>
       </label>
-      <div class="hcformMessage" id="msg_Geslacht"><ul><li>Selecteer minimaal een optie.</li></ul></div>
+      <div class="hcformMessage" id="msg_geslacht"></div>
     </div>
     <div class="hcFormElement"><label>
-        <div class="hcLabelName">Geboortejaar <span>optioneel</span></div>
-        <div class="hcLabelInfo">Spreekt u thuis een van de volgende (vreemde) talen? Indien van toepassing, kunt u meerdere antwoorden aankruisen.</div>
-        <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_1" name="Geboortejaar" value="optie 1" class=" "><label for="Geboortejaaroptie_1">optie 1</label></div>
-        <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_2" name="Geboortejaar" value="optie 2" class=" "><label for="Geboortejaaroptie_2">optie 2</label></div>
-        <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_3" name="Geboortejaar" value="optie 3" class=" "><label for="Geboortejaaroptie_3">optie 3</label></div>
-        <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_4" name="Geboortejaar" value="optie 4" class=" "><label for="Geboortejaaroptie_4">optie 4</label></div>
-        <div class="hcFormElementItem"><input type="checkbox" id="Geboortejaaroptie_5" name="Geboortejaar" value="optie 5" class=" "><label for="Geboortejaaroptie_5">optie 5</label></div>
+        <div class="hcLabelName">Geboortejaar</div>
+        <div class="hcLabelInfo">Je Geboortejaar AUB</div>
+        <div class="hcFormElementItem"><input type="checkbox" id="geboortejaaroptie_1" name="geboortejaar" value="optie 1" class=" "><label for="geboortejaaroptie_1">optie 1</label></div>
+        <div class="hcFormElementItem"><input type="checkbox" id="geboortejaaroptie_2" name="geboortejaar" value="optie 2" class=" "><label for="geboortejaaroptie_2">optie 2</label></div>
+        <div class="hcFormElementItem"><input type="checkbox" id="geboortejaaroptie_3" name="geboortejaar" value="optie 3" class=" "><label for="geboortejaaroptie_3">optie 3</label></div>
+        <div class="hcFormElementItem"><input type="checkbox" id="geboortejaaroptie_4" name="geboortejaar" value="optie 4" class=" "><label for="geboortejaaroptie_4">optie 4</label></div>
+        <div class="hcFormElementItem"><input type="checkbox" id="geboortejaaroptie_5" name="geboortejaar" value="optie 5" class=" "><label for="geboortejaaroptie_5">optie 5</label></div>
       </label>
-      <div class="hcformMessage" id="msg_Geboortejaar"></div>
+      <div class="hcformMessage" id="msg_geboortejaar"></div>
     </div>
   </div>
 
