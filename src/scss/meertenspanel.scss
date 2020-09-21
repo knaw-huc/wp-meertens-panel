@@ -82,3 +82,28 @@ h4 {
 
 
 }
+
+#gegevens {
+	width: 100%;
+	max-width: 650px;
+	border-collapse: collapse;
+
+	td {
+		border-bottom: 1px solid hsl(348, 23%, 85%);
+		padding: .5rem;
+	}
+	td:nth-child(1) {
+  	font-weight: 700;
+		max-width:70px;
+		color: hsl(348, 23%, 45%);
+	}
+}
+
+.warning {
+	width: 100%;
+
+	background-color: hsl(2, 50%, 90%);
+	padding: 1rem;
+	margin: 1rem -1rem;
+	border-radius: 4px;
+}

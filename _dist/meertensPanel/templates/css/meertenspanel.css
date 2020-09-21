@@ -274,3 +274,22 @@ h4 {
 
 .mpLoginInfo {
   margin-bottom: 1rem; }
+
+#gegevens {
+  width: 100%;
+  max-width: 650px;
+  border-collapse: collapse; }
+  #gegevens td {
+    border-bottom: 1px solid #e2d0d3;
+    padding: .5rem; }
+  #gegevens td:nth-child(1) {
+    font-weight: 700;
+    max-width: 70px;
+    color: #8d5863; }
+
+.warning {
+  width: 100%;
+  background-color: #f2dad9;
+  padding: 1rem;
+  margin: 1rem -1rem;
+  border-radius: 4px; }

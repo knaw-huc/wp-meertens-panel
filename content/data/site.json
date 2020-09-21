@@ -15,6 +15,10 @@
       {
         "name": "login.html",
         "template": "login.html"
+      },
+      {
+        "name": "gegevens.html",
+        "template": "gegevens.html"
       }
   ]
 }
