@@ -25,20 +25,21 @@ get_header();
 
 
 		<div class="mpHomeCols">
-		  <div class="mpHomeCol1"><h2>Meld je direct aan</h2>
+		  <div class="mpHomeCol1"><h2><?php echo $blocks[2]['innerHTML']; ?></h2>
+				<?php echo $blocks[4]['innerHTML']; ?>
 		    <p><button type="button" name="button">Aanmelden</button></p>
 
 		  </div>
 		  <div class="mpHomeCol2">
-		    <?php echo $blocks[2]['innerHTML']; ?>
-				<?php echo $blocks[4]['innerHTML']; ?>
+		    <?php echo $blocks[6]['innerHTML']; ?>
+				<?php echo $blocks[8]['innerHTML']; ?>
 		  </div>
 		</div>
 
 
 		<div class="mpTextWrap">
 			<?php
-			for ($i=6; $i < count($blocks); $i++) {
+			for ($i=10; $i < count($blocks); $i++) {
 				//if ( $i !=0 ) {
 					echo render_block($blocks[$i]);
 			//}
