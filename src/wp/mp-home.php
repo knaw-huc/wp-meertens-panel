@@ -27,7 +27,7 @@ get_header();
 		<div class="mpHomeCols">
 		  <div class="mpHomeCol1"><h2><?php echo $blocks[2]['innerHTML']; ?></h2>
 				<?php echo $blocks[4]['innerHTML']; ?>
-		    <p><button type="button" name="button">Aanmelden</button></p>
+		    <p><button type="button" name="button" onclick="window.location.href='https://www.meertens.knaw.nl/meertenspanel-dev/mp/aanmelden'">Aanmelden</button></p>
 
 		  </div>
 		  <div class="mpHomeCol2">
