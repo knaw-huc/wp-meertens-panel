@@ -204,7 +204,7 @@ button {
 
 @media (min-width: 800px) {
   .mpHero {
-    height: 85vh; }
+    min-height: 85vh; }
   .mpSiteTilte {
     font-size: 8rem;
     font-weight: 700;
@@ -249,6 +249,9 @@ h4 {
   line-height: 130%;
   font-weight: 300;
   font-style: italic; }
+
+strong {
+  font-weight: 700; }
 
 .links {
   position: fixed;

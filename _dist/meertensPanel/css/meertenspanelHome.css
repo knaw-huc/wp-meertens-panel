@@ -38,7 +38,7 @@
 
 @media (min-width: 800px) {
   .mpHero {
-    height: 85vh; }
+    min-height: 85vh; }
   .mpSiteTilte {
     font-size: 8rem;
     font-weight: 700;
