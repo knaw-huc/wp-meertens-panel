@@ -24,6 +24,6 @@
   <!-- if not logged in -->
   <div class="mpLogin">
     Wilt u uw gegevens aanpassen? Log dan hier in.<br>
-    <button type="button" onclick="window.location.href='https://www.meertens.knaw.nl/meertenspanel-dev/mp/inloggen'">Login</button>
+    <button type="button" onclick="window.location.href='https://www.meertens.knaw.nl/mpgebruikers/'">Login</button>
   </div>
 </div>
